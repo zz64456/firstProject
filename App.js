@@ -36,8 +36,8 @@ export default function App() {
         keyboardType={"numeric"}
         maxLength={10}
       />
+      <Text>猜猜看我的手機號碼是多少{phone}</Text>
       <Text>{result}</Text>
-      {/* <Text>猜猜看我的手機號碼是：{phone}</Text> */}
 
       <StatusBar style="auto" />
     </View>
