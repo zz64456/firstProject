@@ -8,7 +8,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.mainText}>Open up App.js to start working on my good app!</Text>
-
+      <Text>超級萬用模板！</Text>
       <StatusBar style="auto" />
     </View>
   );
