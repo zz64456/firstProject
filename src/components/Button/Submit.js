@@ -22,7 +22,8 @@ export default Submit
 
 Submit.propTypes = {
     title: PropTypes.string.isRequired,
-    onPress: PropTypes.func
+    onPress: PropTypes.func,
+    fontSize: PropTypes.number
 }
 
 Submit.defaultProps = {
