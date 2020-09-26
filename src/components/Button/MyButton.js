@@ -1,5 +1,6 @@
 import React from 'react'
 import { TouchableOpacity, Text } from 'react-native'
+import PropTypes from 'prop-types'
 
 // function MyButton(props) {
 //     return (
@@ -12,11 +13,20 @@ import { TouchableOpacity, Text } from 'react-native'
 // }
 
 const MyButton = props => (
-    <TouchableOpacity onPress={props.onPress}>
+    <TouchableOpacity onPress={props.MyonPress} >
         <Text>
-            {props.title}
+            {props.Mytitle}
         </Text>
     </TouchableOpacity>
 )
 
 export default MyButton
+
+MyButton.propTypes = {
+    Mytitle: PropTypes.string.isRequired,
+    MyonPress: PropTypes.func
+}
+
+MyButton.defaultProps = {
+    Mytitle: 'Hello'
+}
