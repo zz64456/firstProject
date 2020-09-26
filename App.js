@@ -8,13 +8,22 @@ export default function App() {
 
   const [text, setText] = useState('')
 
+  const Textsubmit = () => {
+    console.log('送出值：' + text)
+  }
+
   return (
     <View style={styles.container}>
-      {/* <Text style={styles.mainText}>Open up App.js to start working on my good app!</Text> */}
       <TextInput
-        onChangeText
+        style={{ backgroundColor: 'black', width: 230, height: 60, textAlign: 'center', fontSize: 25, color: 'white' }}
+        onChangeText={(text) => setText(text)}
+        value={text}
+        autoFocus={true}
       />
-      <Submit title='' onPress={() => Textsubmit()} />
+
+
+      <Submit onPress={() => Textsubmit()} fontSize={30} margin={15} borderRadius={10} />
+
 
       <StatusBar style="auto" />
     </View>
